@@ -83,7 +83,8 @@ input[type="radio"].visually-hidden{
 }
 
 .image {
-    margin-bottom: 31px;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .caption {
@@ -98,28 +99,22 @@ input[type="radio"].visually-hidden{
 .title {
     font-size: 30px;
     line-height: 36px;
-    width: 420px;
     margin-bottom: 32px;
 }
 
-.item {
-    width: 420px;
-}
-
 .article {
-	list-style: none;
+    list-style: none;
+    padding: 0;
 }
 
 .article-item {
     display: inline-block;
-    width: 420px; 
+    width: 420px;
+    margin-right: 60px; 
 }
 
-.one, 
-.two, 
-.three, 
-.four {
-    margin-bottom: 134px;
+.article-item:nth-child(2n) {
+    margin-right: 0px;
 }
 
 
@@ -130,6 +125,6 @@ input[type="radio"].visually-hidden{
     border: 1px solid #cbcbcb;
     background-color: #ffffff;
     color: #626262;
-    width: 164px;  
+    padding: 20px 34px 22px 32px; 
 }
 
