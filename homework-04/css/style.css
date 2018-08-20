@@ -243,14 +243,21 @@ img {
 }
 
 .button {
+  display: block;
+  width: 160px;
   text-decoration: none;
-  border: 1px solid #4ec6ab;
   background-color: #4ec6ab;
   color: #ffffff;
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
-  padding: 14px 42px 12px 42px;
+  padding: 14px 39px 12px 39px;
   border-radius: 4px;
   cursor: pointer;
 }
+
+.button:hover {
+  background-color: #DC143C;  
+  transition: 1s Ease;  
+}
+
