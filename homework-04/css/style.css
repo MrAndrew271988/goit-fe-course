@@ -59,6 +59,7 @@ img {
 }
 
 .main-menu a {
+  display: block;
   color: #0f0101;
   text-decoration: none;
   text-transform: uppercase;
@@ -210,7 +211,6 @@ img {
   float: left;
   margin-right: 30px;
   width: 350px;
-  height: 262px;
 }
 
 .news-item:nth-child(3n) {
@@ -243,6 +243,8 @@ img {
 }
 
 .button {
+  text-decoration: none;
+  border: 1px solid #4ec6ab;
   background-color: #4ec6ab;
   color: #ffffff;
   font-size: 16px;
