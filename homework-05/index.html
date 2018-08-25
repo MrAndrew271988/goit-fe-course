@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +11,119 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <header class="page-header clearfix">
+    <header class="page-header wrapper clearfix">
+        <nav>
             <a href="#" class="logo">Mart</a>
 
-            <nav>
-                <ul class="main-menu">
-                    <li class="main-menu-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#">About us</a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#">Page</a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#">Shop</a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="main-menu-item">
-                        <a href="#">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <ul class="main-menu">
+                <li class="main-menu-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">About us</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Page</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Shop</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <div class="slider">
+    <main>
+        <div class="slider">
+            <div class="slider-title wrapper">
                 <button class="slider-ctrl slider-ctrl-prev">
-                    <span class="icon-one">&lt;</span>
                 </button>
                 <button class="slider-ctrl slider-ctrl-next">
-                    <span class="icon-two">&gt;</span>
                 </button>
-                
-                <ul class="slides">
-                    <li><img src="img/image1.png" alt="image1" width="1600" height="600"></li>
+
+                <ul class="slides-list">
+                    <li class="slides-item">
+                        <p class="slides-title">Affordable Paris Tours</p>
+                        <p class="slides-descr">City Tours / Tour Tickets / Tour Guides</p>
+                    </li>
                 </ul>
-            
             </div>
-        </main>
-    </div>
+        </div>
+
+        <section class="product wrapper">
+            <h2 class="product-title">New Collection</h2>
+
+            <ul class="product-list wrapper clearfix">
+                <li class="product-list-item">
+                    <div class="overlay">
+                        <span class="overlay-icon"></span>
+                        <span class="overlay-icon2"></span>
+                        <span class="overlay-icon3"></span>
+                        <span class="overlay-icon4">Add to cart</span>
+                    </div>
+                    
+                    <img src="img/image2.png" alt="blue tshirt" width="255" height="322">
+                    <div class="product-list-descr clearfix">
+                        <p class="item">Blue tshirt</p>
+                        <p class="price">26</p>
+                    </div>
+                </li>
+                <li class="product-list-item">
+                    <div class="overlay">
+                        <span class="overlay-icon"></span>
+                        <span class="overlay-icon2"></span>
+                        <span class="overlay-icon3"></span>
+                        <span class="overlay-icon4">Add to cart</span>
+                    </div>
+                    
+                    <img src="img/image3.png" alt="woman shirt" width="255" height="322">
+                    <div class="product-list-descr clearfix">
+                        <p class="item">Woman shirt</p>
+                        <p class="price">31</p>
+                    </div>
+                </li>
+                <li class="product-list-item">
+                    <div class="overlay">
+                        <span class="overlay-icon"></span>
+                        <span class="overlay-icon2"></span>
+                        <span class="overlay-icon3"></span>
+                        <span class="overlay-icon4">Add to cart</span>
+                    </div>
+                    
+                    <img src="img/image4.png" alt="yellow shirt" width="255" height="322">
+                    <div class="product-list-descr clearfix">
+                        <p class="item">Yellow tshirt</p>
+                        <p class="price">21</p>
+                    </div>
+                </li>
+                <li class="product-list-item">
+                    <div class="overlay">
+                        <span class="overlay-icon"></span>
+                        <span class="overlay-icon2"></span>
+                        <span class="overlay-icon3"></span>
+                        <span class="overlay-icon4">Add to cart</span>
+                    </div>
+                    
+                    <img src="img/image5.png" alt="cool lingerie" width="255" height="322">
+                    <div class="product-list-descr clearfix">
+                        <p class="item">Cool lingerie</p>
+                        <p class="price">56</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="page-footer">
+
+        </footer>
+    </main>
 </body>
+
 </html>
