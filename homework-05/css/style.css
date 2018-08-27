@@ -170,6 +170,7 @@ img {
   background-color: rgb(0, 0, 0);
   position: absolute;
   opacity: 0;
+  border: 10px solid rgb(255, 255, 255);
 }
 
 .product-list-item:hover .overlay {
@@ -180,58 +181,29 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.overlay-icon,
-.overlay-icon2,
-.overlay-icon3,
-.overlay-icon4 {
-  display: inline-block;
-  border: none;
-  width: 50px;
-  height: 50px;
   position: absolute;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.overlay-icon {
-  background-image: url(../img/heart.png);
-  top: 37%;
-  left: 27%;
-  border: 1px solid white;
-}
-
-.overlay-icon2 {
-  background-image: url(../img/arrows.png);
-  background-color: #1abc9c;
-  top: 37%;
-  left: 49%;
-}
-
-.overlay-icon3 {
-  background-image: url(../img/clock.png);
-  top: 37%;
-  left: 72%;
-  border: 1px solid white;
-}
-
-.overlay-icon4 {
-  background-image: url(../img/basket.png);
-  width: 166px;
-  height: 50px;
-  background-color: #323232;
-  background-position: left;
-  top: 55%;
+  top: 50%;
   left: 50%;
-  font-size: 14px;
-  line-height: 32px;;
-  text-transform: uppercase;
-  text-align: right;
-  border: 1px solid white;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-list li {
+  float: left;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
 }
 
 .product-title {
