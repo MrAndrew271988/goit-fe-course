@@ -191,6 +191,10 @@ img {
   float: left;
 }
 
+.overlay-list-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden{
