@@ -233,9 +233,12 @@ input[type="radio"].visually-hidden{
 
 .overlay-list-link2 {
   background-image: url(../img/arrows.png);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.overlay-list-link2:hover {
   border: 1px solid rgb(26, 188, 156);
   background-color: rgb(26, 188, 156);
-
 }
 
 .overlay-list-link3 {
@@ -245,20 +248,14 @@ input[type="radio"].visually-hidden{
 }
 
 .overlay-list-link4 {
-  background-image: url(../img/basket.png);
+  background-image: url(../img/basket.png), url(../img/add-to-cart.png);
   display: block;
   border: 1px solid rgb(255, 255, 255);
   background-color: rgb(50, 50, 50);
   width: 164px;
   height: 48px;
   background-repeat: no-repeat;
-  background-position: left;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 32px;
-  text-transform: uppercase;
-  text-decoration: none;
+  background-position: 10% 50%, 80% 50%;
 }
 
 .product-title {
