@@ -187,12 +187,16 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.overlay-list li {
+.overlay-list-item {
   float: left;
 }
 
 .overlay-list-item:not(:last-child) {
   margin-bottom: 7px;
+}
+
+.overlay-list-item:nth-child(-n+2) {
+  margin-right: 10px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -210,20 +214,51 @@ input[type="radio"].visually-hidden{
     overflow:hidden;
 }
 
+
+.overlay-list-link1,
+.overlay-list-link2,
+.overlay-list-link3 {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .overlay-list-link1 {
   background-image: url(../img/heart.png);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
 }
 
 .overlay-list-link2 {
   background-image: url(../img/arrows.png);
+  border: 1px solid rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
+
 }
 
 .overlay-list-link3 {
   background-image: url(../img/clock.png);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
 }
 
 .overlay-list-link4 {
   background-image: url(../img/basket.png);
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+  width: 164px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .product-title {
@@ -316,14 +351,21 @@ input[type="radio"].visually-hidden{
   float: left;
   font-size: 16px;
   line-height: 28px;
+  text-align: center;
 }
 
-.caption-one::after {
-  content: "\00A9";
+.caption-one {
+  margin-right: 6px;
+  margin-left: 366px;
 }
 
-.caption-two::after {
-  content: "\2758";
+.caption-two {
+  margin-right: 8px;
+}
+
+.design:hover {
+  color: #46bfa9;
+  cursor: pointer;
 }
 
 
