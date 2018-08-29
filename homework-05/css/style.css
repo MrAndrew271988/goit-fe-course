@@ -344,26 +344,24 @@ input[type="radio"].visually-hidden{
   background-color: #323232;
 }
 
-.page-footer p {
-  float: left;
+.caption {
+  margin: 0;
+}
+
+.caption-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fefefe;
   font-size: 16px;
   line-height: 28px;
-  text-align: center;
 }
 
-.caption-one {
-  margin-right: 6px;
-  margin-left: 366px;
-}
-
-.caption-two {
-  margin-right: 8px;
-}
-
-.design:hover {
+.caption-span:hover {
   color: #46bfa9;
-  cursor: pointer;
 }
+
+
 
 
 
