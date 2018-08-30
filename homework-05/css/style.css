@@ -236,11 +236,6 @@ input[type="radio"].visually-hidden{
   border: 1px solid rgb(255, 255, 255);
 }
 
-.overlay-list-link2:hover {
-  border: 1px solid rgb(26, 188, 156);
-  background-color: rgb(26, 188, 156);
-}
-
 .overlay-list-link3 {
   background-image: url(../img/clock.png);
   border: 1px solid rgb(255, 255, 255);
@@ -256,6 +251,14 @@ input[type="radio"].visually-hidden{
   height: 48px;
   background-repeat: no-repeat;
   background-position: 10% 50%, 80% 50%;
+}
+
+.overlay-list-link1:hover,
+.overlay-list-link2:hover,
+.overlay-list-link3:hover,
+.overlay-list-link4:hover {
+  border: 1px solid rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
 }
 
 .product-title {
@@ -346,19 +349,16 @@ input[type="radio"].visually-hidden{
 
 .caption {
   margin: 0;
-}
-
-.caption-link {
-  display: block;
   text-align: center;
-  text-decoration: none;
-  color: #fefefe;
   font-size: 16px;
   line-height: 28px;
 }
 
-.caption-span:hover {
+.caption-link {
+  text-decoration: none;
   color: #46bfa9;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 
