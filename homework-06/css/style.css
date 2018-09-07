@@ -32,7 +32,7 @@ img {
 /* ......HEADER....... */
 
 .masthead {
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 
 .mastnav {
@@ -60,20 +60,32 @@ img {
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", "Arial", sans-serif;
+  color: #95e1d3;
+}
+
+.site-nav a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #f38181;
+  margin-top: 10px;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  background-color: #95e1d3;
-  color: #ffffff;
+  color: #f38181;
 }
 
-.site-nav .about:hover {
-  border-bottom: 3px solid #f38181;
+.site-nav a:hover::after,
+.site-nav a:focus::after {
+  transform: scaleX(1);
 }
 
 
-/* .........Main......... */
+/* .........Section Services......... */
 
 .services-header {
   display: flex;
@@ -82,13 +94,50 @@ img {
   flex-direction: column;
 }
 
+.services-header p {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.services-header h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.services-header h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  margin-top: 38px;
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  margin-bottom: 86px;
   list-style: none;
+}
+
+.services-list p {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .services-list-item {
@@ -96,7 +145,8 @@ img {
   flex-wrap: wrap;
   flex-basis: calc(33.333% - 20px);
   margin-bottom: 96px;
-  text-align: left;
+  position: relative;
+  padding-left: 82px;
 }
 
 .services-list-item:nth-last-child(-n + 3) {
@@ -106,9 +156,13 @@ img {
 .services-list-item::before {
   content: "";
   display: block;
+  width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  left: 25px;
+  top: 0px;
 }
 
 .icon-alarm::before {
@@ -134,3 +188,194 @@ img {
 .icon-image::before {
   background-image: url(../img/IMAGE.png);
 }
+
+/* ...........Section Team......... */
+
+.team {
+  margin-bottom: 82px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-header p {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.team-header h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.team-header h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  margin-top: 38px;
+}
+
+.team-header .caption {
+  text-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  width: 980px;
+  margin-bottom: 90px;
+}
+
+.team-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list .image {
+  margin-bottom: 30px;
+}
+
+.team-list .team-name {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-list .team-position {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+}
+
+.team-list-item {
+  flex-basis: calc(33.333% - 30px);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-list-item .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 380px;
+  height: 458px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient( 90deg, rgba(252,227,138, 0.7) 0%, rgba(243,129,129, 0.7) 100%);
+  opacity: 0;
+  transform: translateX(-110%);
+  transition: opacity 200ms linear,  transform 200ms ease-in;
+}
+
+.team-list-item:hover .overlay {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.socials-list {
+  display: flex;
+  list-style: none; 
+}
+
+.socials-link1,
+.socials-link2,
+.socials-link3,
+.socials-link4 {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(252, 227, 138)
+}
+
+.socials-link1 {
+  background-image: url(../img/facebook.png);
+}
+
+.socials-link2 {
+  background-image: url(../img/twitter.png);
+}
+
+.socials-link3 {
+  background-image: url(../img/pinterest.png);
+}
+
+.socials-link4 {
+  background-image: url(../img/instagram.png);
+}
+
+.socials-link1:hover,
+.socials-link2:hover,
+.socials-link3:hover,
+.socials-link4:hover {
+  background-color: #95e1d3;
+}
+
+
+/* .........Footer........... */
+
+.page-footer {
+padding-top: 22px;
+padding-bottom: 24px;
+border-top: 1px solid rgb(229, 229, 229);
+}
+
+.page-footer p {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #f38181;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
