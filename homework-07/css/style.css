@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v12-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-slab-v7-latin-regular.woff2") format("woff2"), 
+    url("../fonts/roboto-slab-v7-latin-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Droid Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/DroidSerif-Italic.woff2") format("woff2"), 
+    url("../fonts/DroidSerif-Italic.woff") format("woff");
+  }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #777777;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 94rem;
+  margin: 0 auto;
+}
+
+/* ........HEADER..... */
+
+.masthead {
+  margin-bottom: 9.4rem;
+}
+
+.mastnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 14.1rem;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 48.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 4.1rem;
+  font-weight: 400;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #222222;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #fed136;
+}
+
+/* ......Section Services..... */
+
+.services-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7.4rem;
+}
+
+.services-header-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 7.5rem;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services-header-caption,
+.contact-header-caption {
+  font-family: "Droid Serif", "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.9rem;
+  color: #777777;
+  margin: 0;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12rem;
+  list-style: none;
+}
+
+.services-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(33.333% - 3.5rem);
+  text-align: center;
+}
+
+.services-list-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 7.5rem;
+  color: #222222;
+  margin: 0;
+}
+
+.services-list-caption {
+  margin: 0;
+}
+
+.services-list-item::before {
+  content: "";
+  display: block;
+  width: 7.4rem;
+  height: 7.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-basket::before {
+    background-image: url("../img/Icon-Basket.png");
+}
+
+.icon-laptop::before {
+    background-image: url("../img/Icon-Laptop.png");
+}
+
+.icon-locked::before {
+    background-image: url("../img/Icon-Locked.png");
+}
+
+/* .......Section Contact..... */
+
+.contact {
+  background-image: url("../img/Map-Image.jpg");
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10.4rem;
+  padding-bottom: 7.4rem;
+}
+
+.contact-header-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+input, button {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+
+.signup-form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 94rem;
+}
+
+.signup-form-input {
+  display: flex;
+  flex-direction: column;
+  width: 45.5rem;
+}
+
+.signup-form-textarea {
+  width: 45.5rem;
+}
+
+.signup-form input {
+  padding: 1.6rem 0rem 1.8rem 2rem;
+  margin-bottom: 2.8rem;
+}
+
+.signup-form input::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
