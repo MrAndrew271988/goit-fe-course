@@ -13,8 +13,8 @@
 <body>
     <header class="masthead wrapper">
         <nav class="mastnav">
-            <a href="" class="logo">
-                <img src="img/Logo-Treehouse.png" alt="site-logo" width="79">
+            <a href="#" class="logo">
+                Golden
             </a>
 
             <ul class="site-nav">
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section class="services wrapper">
+        <section class="services wrapper section">
             <header class="services-header">
                 <h2 class="services-header-title">Services</h2>
                 <p class="services-header-caption">Proin iaculis purus consequat sem cure.</p>
@@ -55,7 +55,7 @@
             </ul>
         </section>
 
-        <section class="contact">
+        <section class="contact section">
             <div class="wrapper">
                 <header class="contact-header">
                     <h2 class="contact-header-title">Contact us</h2>
@@ -63,19 +63,19 @@
                 </header>
 
                 <form class="signup-form">
-                    <ul class="signup-form-list">
-                        <li class="signup-form-input">
-                            <input type="text" name="user-name" placeholder="Your name *">
+                    <div class="signup-form-list">
+                        <div class="signup-form-input">
+                            <input type="text" name="user-name" placeholder="Your name *" required>
 
-                            <input type="email" name="email" placeholder="Your e-mail *">
+                            <input type="email" name="email" placeholder="Your e-mail *" required>
 
-                            <input type="text" name="subject" placeholder="Subject">
-                        </li>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
 
-                        <li class="signup-form-textarea">
-                            <textarea name="" cols="30" rows="10" id="" placeholder="Your message *"></textarea>
-                        </li>
-                    </ul>
+                        <textarea name="textarea" cols="30" rows="10" placeholder="Your message *" required></textarea>
+                    </div>
+
+                    <input type="button" value="Send message" class="signup-form-button">
                 </form>
             </div>
         </section>

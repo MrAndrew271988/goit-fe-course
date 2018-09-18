@@ -1,34 +1,42 @@
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"),
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v12-latin-regular.woff2") format("woff2"),
     url("../fonts/montserrat-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"),
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v12-latin-700.woff2") format("woff2"),
     url("../fonts/montserrat-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/roboto-slab-v7-latin-regular.woff2") format("woff2"), 
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v7-latin-regular.woff2") format("woff2"),
     url("../fonts/roboto-slab-v7-latin-regular.woff") format("woff");
-  }
+}
 
-  @font-face {
-    font-family: "Droid Serif";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/DroidSerif-Italic.woff2") format("woff2"), 
+@font-face {
+  font-family: "Droid Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DroidSerif-Italic.woff2") format("woff2"),
     url("../fonts/DroidSerif-Italic.woff") format("woff");
-  }
+}
+
+@font-face {
+  font-family: "Wisdom Script";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/WisdomScriptAJ.woff2") format("woff2"),
+    url("../fonts/WisdomScriptAJ.woff") format("woff");
+}
 
 html {
   box-sizing: border-box;
@@ -65,15 +73,32 @@ img {
 
 /* ........HEADER..... */
 
-.masthead {
-  margin-bottom: 9.4rem;
+.section {
+  padding-top: 10.2rem;
+  padding-bottom: 11.4rem;
 }
 
 .mastnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 14.1rem;
+  min-height: 14.2rem;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+  font-size: 2.6rem;
+  line-height: 4.2rem;
+  font-weight: 400;
+  font-family: "Wisdom Script", "Arial", sans-serif;
+  color: #222222;
+}
+
+
+.logo:hover,
+.logo:focus {
+  color: #fed136;
 }
 
 .site-nav {
@@ -81,7 +106,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 48.5rem;
+  width: 48.6rem;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -92,7 +117,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
-  line-height: 4.1rem;
+  line-height: 4.2rem;
   font-weight: 400;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #222222;
@@ -104,6 +129,10 @@ img {
 }
 
 /* ......Section Services..... */
+
+.services {
+  padding-bottom: 12rem;
+}
 
 .services-header {
   display: flex;
@@ -117,7 +146,7 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 7.5rem;
+  line-height: 7.6rem;
   color: #222222;
   text-transform: uppercase;
   margin: 0;
@@ -129,7 +158,7 @@ img {
   font-size: 1.6rem;
   font-weight: 400;
   font-style: italic;
-  line-height: 1.9rem;
+  line-height: 1.8rem;
   color: #777777;
   margin: 0;
 }
@@ -139,14 +168,11 @@ img {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: 12rem;
   list-style: none;
 }
 
 .services-list-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(33.333% - 3.5rem);
+  flex: 0 0 29rem;
   text-align: center;
 }
 
@@ -154,7 +180,7 @@ img {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 7.5rem;
+  line-height: 7.6rem;
   color: #222222;
   margin: 0;
 }
@@ -166,22 +192,21 @@ img {
 .services-list-item::before {
   content: "";
   display: block;
-  width: 7.4rem;
-  height: 7.3rem;
+  height: 7.4rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .icon-basket::before {
-    background-image: url("../img/Icon-Basket.png");
+  background-image: url("../img/Icon-Basket.png");
 }
 
 .icon-laptop::before {
-    background-image: url("../img/Icon-Laptop.png");
+  background-image: url("../img/Icon-Laptop.png");
 }
 
 .icon-locked::before {
-    background-image: url("../img/Icon-Locked.png");
+  background-image: url("../img/Icon-Locked.png");
 }
 
 /* .......Section Contact..... */
@@ -191,12 +216,8 @@ img {
 }
 
 .contact-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 10.4rem;
-  padding-bottom: 7.4rem;
+  text-align: center;
+  margin-bottom: 7.6rem;
 }
 
 .contact-header-title {
@@ -209,28 +230,26 @@ img {
   margin: 0;
 }
 
-input, button {
+input,
+button {
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
-
 .signup-form-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 94rem;
+  margin-bottom: ;
 }
 
 .signup-form-input {
   display: flex;
   flex-direction: column;
-  width: 45.5rem;
+  width: 45.6rem;
+  margin-right: 3rem;
 }
 
-.signup-form-textarea {
-  width: 45.5rem;
+.signup-form textarea {
+  flex-grow: 1;
 }
 
 .signup-form input {
@@ -238,9 +257,40 @@ input, button {
   margin-bottom: 2.8rem;
 }
 
-.signup-form input::placeholder {
+.signup-form input[required]:invalid {
+  border: 2px solid #FF0000;
+}
+
+.signup-form input[required]:valid {
+  border: 2px solid #43f40d;
+}
+
+.signup-form input::placeholder,
+.signup-form textarea::placeholder {
   color: #bbbbbb;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+.signup-form-button {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  color: #ffffff;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 2.4rem 4.6rem;
+  cursor: pointer;
+}
+
+.signup-form-button:hover {
+  background-color: #FF4500;
+}
+
+
+
+
