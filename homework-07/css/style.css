@@ -238,7 +238,7 @@ button {
 .signup-form-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: ;
+  margin-bottom: 2.8rem;
 }
 
 .signup-form-input {
@@ -252,16 +252,22 @@ button {
   flex-grow: 1;
 }
 
-.signup-form input {
+.signup-form input,
+.signup-form textarea {
   padding: 1.6rem 0rem 1.8rem 2rem;
+}
+
+.signup-form input:not(:last-of-type) {
   margin-bottom: 2.8rem;
 }
 
-.signup-form input[required]:invalid {
+.signup-form input[required]:invalid,
+.signup-form textarea[required]:invalid {
   border: 2px solid #FF0000;
 }
 
-.signup-form input[required]:valid {
+.signup-form input[required]:valid,
+.signup-form textarea[required]:valid {
   border: 2px solid #43f40d;
 }
 
@@ -280,16 +286,20 @@ button {
   border-radius: 3px;
   background-color: rgb(254, 209, 54);
   color: #ffffff;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 2.4rem 4.6rem;
+  border: none;
+  width: 24rem;
+  height: 6.6rem;
   cursor: pointer;
+  transition: background-color 1s linear;
 }
 
 .signup-form-button:hover {
   background-color: #FF4500;
 }
+
+
 
 
 
