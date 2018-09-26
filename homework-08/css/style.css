@@ -24,15 +24,14 @@ body {
   margin: 0 auto;
 }
 
-
 /* HEADER */
 
 .page-header {
-    padding-top: 20px;
-    background-image: url("../img/Vector-Smart-Object.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding-top: 20px;
+  background-image: url("../img/Vector-Smart-Object.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page-nav {
@@ -100,7 +99,7 @@ body {
 }
 
 .heroe-header-button {
-text-decoration: none;
+  text-decoration: none;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -111,11 +110,80 @@ text-decoration: none;
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
   width: 280px;
-  /* text-align: center; */
   padding: 12px 46px;
 }
 
+/* SECTION PARTNERS */
 
-  
-  
-  
+.partners {
+  background-color: #ffffff;
+  padding-top: 66px;
+  padding-bottom: 56px;
+}
+
+.partners-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.partners-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners-list-item {
+  text-align: center;
+}
+
+.partners-list-image {
+  position: relative;
+}
+.partners-list-image::before {
+  content: "";
+  display: block;
+  width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 180px;
+  bottom: 0px;
+}
+
+.shape-1::before {
+  background-image: url("../img/Shape-1.png");
+}
+
+.shape-2::before {
+  background-image: url("../img/Shape-2.png");
+}
+
+.shape-3::before {
+  background-image: url("../img/Shape-3.png");
+}
+
+.shape-4::before {
+  background-image: url("../img/Shape-4.png");
+}
+
+.partners-list-name {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.partners-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 70px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
+}
