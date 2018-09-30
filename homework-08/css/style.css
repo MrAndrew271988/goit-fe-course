@@ -11,7 +11,6 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #1a1915;
   color: #666666;
   font-size: 14px;
   line-height: 16px;
@@ -90,19 +89,26 @@ body {
   margin: 0;
 }
 
-.hero-header-button {
-  text-decoration: none;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
+.hero-header-subtitle {
+  margin: 0;
 }
 
-.hero-header-button:hover {
+.hero-header-button {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
   width: 280px;
   padding: 12px 46px;
+}
+
+.hero-header-button:hover {
+  background-color: #E933FF;
 }
 
 /* SECTION PARTNERS */
@@ -200,6 +206,10 @@ body {
 /* MEDIA */
 
 @media (max-width: 767px) {
+  .page-header {
+    padding-bottom: 138px;
+  }
+
   .page-nav {
     margin-bottom: 34px;
   }
@@ -220,13 +230,16 @@ body {
     margin-bottom: 18px;
   }
 
+  .partners-list {
+    margin-bottom: 28px;
+  }
+
   .partners-list-item {
     margin-bottom: 28px;
   }
 }
 
 @media (min-width: 768px) {
-
   .page-header {
     padding-bottom: 232px;
   }
@@ -244,18 +257,21 @@ body {
     font-size: 52px;
     line-height: 62px;
     font-weight: 800;
+    margin-bottom: 34px;
   }
 
   .hero-header-subtitle {
     font-size: 24px;
     line-height: 28px;
     font-weight: 800;
+    margin-bottom: 32px;
   }
 
   .partners-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .partners-list-item {
@@ -270,14 +286,6 @@ body {
     margin-right: 20px;
   }
 
-  .partners-list-item:nth-child(-n+2) {
-    margin-bottom: 58px;
-  }
-
-  .partners-list-item:nth-child(n+3) {
-    margin-bottom: 40px;
-  }
-
   .partners-title {
     margin-bottom: 34px;
   }
@@ -288,13 +296,13 @@ body {
   }
 }
 
-/* @media (min-width: 768px) and (max-width: 1439px) {
-  .partners-list-item:not(:nth-last-child(-2+n)) {
+@media (min-width: 768px) and (max-width: 957px) {
+  .partners-list-item:nth-child(-n+2) {
     margin-bottom: 58px;
   }
-} */
+}
 
-@media (min-width: 1440px) {
+@media (min-width: 958px) {
   .wrapper {
     width: 940px;
   }
@@ -312,6 +320,10 @@ body {
 
   .partners-list-item:not(:last-child) {
     margin-right: 20px;
+  }
+
+  .partners-list-item:not(:nth-child(-n+4)) {
+    margin-bottom: 38px;
   }
 
   *, *::before, *::after {
