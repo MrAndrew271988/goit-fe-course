@@ -325,8 +325,4 @@ body {
   .partners-list-item:not(:nth-child(-n+4)) {
     margin-bottom: 38px;
   }
-
-  *, *::before, *::after {
-    box-sizing: content-box;
-}
 }
