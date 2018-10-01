@@ -307,9 +307,16 @@ body {
     width: 940px;
   }
 
+  .hero {
+    padding: 0 162px;
+  }
+
+  .partners {
+    padding: 0;
+    padding-top: 72px;
+  }
+
   .partners-list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
