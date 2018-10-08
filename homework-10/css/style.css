@@ -85,6 +85,13 @@ input[type="radio"].visually-hidden {
   width: 90px;
 }
 
+.site-icons__svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  fill: #ffffff;
+}
+
 .site-navigation__link {
   display: block;
   text-decoration: none;
