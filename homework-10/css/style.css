@@ -102,7 +102,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.site-navigation__link::after {
+.site-icons__link {
+  display: block;
+  text-decoration: none;
+}
+
+.site-navigation__link::after,
+.site-icons__link::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -118,8 +124,18 @@ input[type="radio"].visually-hidden {
   color: #fce38a;
 }
 
+.site-icons__link:hover,
+.site-icons__link:focus {
+  color: #fce38a;
+}
+
 .site-navigation__link:hover::after,
 .site-navigation__link:focus::after {
+  transform: scaleX(1);
+}
+
+.site-icons__link:hover::after,
+.site-icons__link:focus::after {
   transform: scaleX(1);
 }
 
